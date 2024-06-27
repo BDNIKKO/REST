@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSONPlaceholder API Interaction</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JSONPlaceholder API Interaction</h1>
+        <button id="getAllPosts" class="btn btn-primary">Get All Posts</button>
+        <button id="getPost10" class="btn btn-secondary">Get Post with ID 10</button>
+        <button id="createPost" class="btn btn-success">Create a New Post</button>
+        <button id="replacePost12" class="btn btn-warning">Replace Post with ID 12</button>
+        <button id="updatePost12" class="btn btn-info">Update Title of Post with ID 12</button>
+        <button id="deletePost12" class="btn btn-danger">Delete Post with ID 12</button>
+        
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="rest.js"></script>
+</body>
+</html>
